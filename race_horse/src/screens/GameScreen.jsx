@@ -16,16 +16,10 @@ export default function GameScreen() {
         { top: '92%', left: '71%', transform: 'rotate(10deg)' },
         { top: '87.5%', left: '72%', transform: 'rotate(310deg)' },
         { top: '85.5%', left: '65.8%', transform: 'rotate(270deg)' },
+        { top: '85.5%', left: '58.8%', transform: 'rotate(270deg)' },
+       
         
-        
-        { top: '97%', left: '4.0%', transform: 'rotate(60deg)' },
-        { top: '15%', left: '25%', transform: 'rotate(0deg)' },
-        { top: '20%', left: '40%', transform: 'rotate(20deg)' },
-        { top: '30%', left: '50%', transform: 'rotate(30deg)' },
-        { top: '45%', left: '55%', transform: 'rotate(45deg)' },
-        { top: '60%', left: '50%', transform: 'rotate(60deg)' },
-        { top: '70%', left: '40%', transform: 'rotate(70deg)' },
-        { top: '75%', left: '25%', transform: 'rotate(80deg)' },
+      
     ];
 
     return (
@@ -41,7 +35,7 @@ export default function GameScreen() {
                         transform: pos.transform,
                     }}
                 >
-                    <Horse />
+                    <Horse/>
                 </div>
             ))}
         </div>
