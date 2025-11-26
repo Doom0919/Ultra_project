@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Ultra_project/static/css/main.685dcf62.css",
-    "main.js": "/Ultra_project/static/js/main.ec977464.js",
-    "static/js/453.e19362dd.chunk.js": "/Ultra_project/static/js/453.e19362dd.chunk.js",
-    "static/media/background.jpg": "/Ultra_project/static/media/background.720133200c9f734ff7fe.jpg",
-    "static/media/tawga.png": "/Ultra_project/static/media/tawga.302243f906a454e25f68.png",
-    "index.html": "/Ultra_project/index.html",
-    "main.685dcf62.css.map": "/Ultra_project/static/css/main.685dcf62.css.map",
-    "main.ec977464.js.map": "/Ultra_project/static/js/main.ec977464.js.map",
-    "453.e19362dd.chunk.js.map": "/Ultra_project/static/js/453.e19362dd.chunk.js.map"
+    "main.css": "/Ultra_project/race_horse/static/css/main.685dcf62.css",
+    "main.js": "/Ultra_project/race_horse/static/js/main.574e4c3f.js",
+    "static/js/453.e19362dd.chunk.js": "/Ultra_project/race_horse/static/js/453.e19362dd.chunk.js",
+    "static/media/background.jpg": "/Ultra_project/race_horse/static/media/background.720133200c9f734ff7fe.jpg",
+    "static/media/tawga.png": "/Ultra_project/race_horse/static/media/tawga.302243f906a454e25f68.png",
+    "index.html": "/Ultra_project/race_horse/index.html",
+    "main.685dcf62.css.map": "/Ultra_project/race_horse/static/css/main.685dcf62.css.map",
+    "main.574e4c3f.js.map": "/Ultra_project/race_horse/static/js/main.574e4c3f.js.map",
+    "453.e19362dd.chunk.js.map": "/Ultra_project/race_horse/static/js/453.e19362dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.685dcf62.css",
-    "static/js/main.ec977464.js"
+    "static/js/main.574e4c3f.js"
   ]
 }
