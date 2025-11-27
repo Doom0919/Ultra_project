@@ -1,0 +1,114 @@
+/* VerticalSplit.css */
+.split-container {
+  height: 100vh;            /* Бүх дэлгэцийн өндөр */
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 2fr;   /* 1:1:2:2 VERTICAL */
+}
+
+.row {
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.r1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr; /* 1:2:1:1 */
+  gap: 8px;
+}
+
+/* Доторх колон блокүүд */
+.c {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+/* Жишээ өнгө */
+.c1 { background: #fee2e2; }
+.c2 { background: #fecaca; }
+.c3 { background: #fca5a5; }
+.c4 { background: #f87171; }
+
+.r2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 тэнцүү өргөн */
+  gap: 12px; /* хоорондын зай */
+  
+  padding: 0 40px; /* зүүн/баруун тэгш шахалт */
+  align-items: center;
+}
+
+/* Хэсэг бүрийн дүр төрх */
+.r2 .box {
+  background: #dbeafe;
+  border: 1px solid #93c5fd;
+  padding: 16px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* r3 → 1:5 vertically split */
+.r3 {
+  display: grid;
+  grid-template-rows: 1fr 5fr;   /* 1 : 5 */
+  gap: 12px;
+}
+
+/* Дээд хэсэг */
+.r3-top {
+  background: #fcd34d;
+  border: 10px solid #fcd34d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Доод том хэсэг → 5 тэнцүү vertical хэсэг */
+.r3-bottom {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);  /* 5 тэнцүү өндөр */
+  gap: 8px;                             /* хоорондын зай */
+}
+
+/* Доод хэсгийн box-ууд */
+.r3-bottom .b {
+  background: #bfdbfe;
+  border: 1px solid #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+/* r4 – дээр/доороосоо ижил зайтай, хоорондоо зайтай, 2 босоо button */
+.r4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Дээр ба доор зай ижил */
+  padding: 20px 0;                /* Дээд/доод гаднах зай */
+
+  height: 100%; /* r4-д өгсөн өндөрт таарна */
+  gap: 16px;    /* 2 button хоорондын зай */
+}
+
+/* Buttons */
+.r4 .btn {
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.r4 .btn:hover {
+  background: #1d4ed8;
+}
+

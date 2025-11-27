@@ -3,8 +3,6 @@ import horse from '../assets/horses/defaultHorse.png';
 import {  useState } from "react";
 import playerHorse from '../assets/horses/playerhorse.png';
 
-// import ShagaiThrow from '../components/shagaithrow.jsx';
-import '../styles/HomeScreen.css';
 export default function GameScreen() {
     const [player1Position, setPlayer1Position] = useState(0);
     const [player2Position, setPlayer2Position] = useState(0);
@@ -54,7 +52,7 @@ export default function GameScreen() {
         { top: '39.8%', left: '51.8%', transform: 'rotate(270deg)' },
         { top: '39.3%', left: '44.3%', transform: 'rotate(275deg)' },
         { top: '38.3%', left: '36.8%', transform: 'rotate(280deg)' },
-        { top: '37.3%', left: '29.3%', transform: 'rotate(290deg)' },
+        { top: '37.3%', left: '29.3%', transform: 'rotate(290deg)' },        
         { top: '35.3%', left: '22.3%', transform: 'rotate(300deg)' },
         { top: '32.3%', left: '16.3%', transform: 'rotate(310deg)' },
         { top: '28.3%', left: '11.8%', transform: 'rotate(340deg)' },
@@ -105,5 +103,6 @@ export default function GameScreen() {
             </div>
             {/* <div className="shagai-throw">  <ShagaiThrow/> </div> */}
         </div>
+        
     );
 }
