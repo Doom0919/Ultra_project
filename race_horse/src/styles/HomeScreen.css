@@ -11,6 +11,20 @@
   font-family: Arial, sans-serif;
 }
 
+.left{
+   position: absolute;
+    display: flex ;
+   left : 52px;
+   top: 8px;
+}
+
+.right{
+  position: absolute;
+  display: flex ;
+  right : 50px;
+  top: 8px;
+  
+}
 .home-screen::before {
   content: '';
   position: absolute;
