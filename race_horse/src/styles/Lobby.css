@@ -30,10 +30,10 @@
 }
 
 /* Жишээ өнгө */
-.c1 { background: #fee2e2; }
-.c2 { background: #fecaca; }
-.c3 { background: #fca5a5; }
-.c4 { background: #f87171; }
+.c1 {  border-radius: 30px; }
+.c2 { border-radius: 10px;}
+.c3 { border-radius: 10px;  }
+.c4 { border-radius: 10px; }
 
 .r2 {
   display: grid;
@@ -46,8 +46,7 @@
 
 /* Хэсэг бүрийн дүр төрх */
 .r2 .box {
-  background: #dbeafe;
-  border: 1px solid #93c5fd;
+  border: 1px solid #39C639;
   padding: 16px;
   text-align: center;
   border-radius: 6px;
@@ -62,8 +61,8 @@
 
 /* Дээд хэсэг */
 .r3-top {
-  background: #fcd34d;
-  border: 10px solid #fcd34d;
+  
+  border: 10px soliб;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,12 +73,14 @@
   display: grid;
   grid-template-rows: repeat(5, 1fr);  /* 5 тэнцүү өндөр */
   gap: 8px;                             /* хоорондын зай */
+  width: 100%;                           /* Өргөнийг нэмэгдүүлэх */
+  margin: 0 auto;                       /* Голруулах */
 }
 
 /* Доод хэсгийн box-ууд */
 .r3-bottom .b {
-  background: #bfdbfe;
-  border: 1px solid #93c5fd;
+  background: rgba(57, 198, 57, 0.2);
+  border: 1px solid #39C639;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,14 +94,13 @@
   justify-content: space-between; /* Дээр ба доор зай ижил */
   padding: 20px 0;                /* Дээд/доод гаднах зай */
 
-  height: 100%; /* r4-д өгсөн өндөрт таарна */
-  gap: 16px;    /* 2 button хоорондын зай */
+  height: 40%; /* r4-д өгсөн өндөрт таарна */
+  gap: 0px;    /* 2 button хоорондын зай */
 }
-
 /* Buttons */
 .r4 .btn {
   padding: 12px 20px;
-  background: #2563eb;
+  background: #39C639;
   color: white;
   border: none;
   border-radius: 8px;
@@ -109,6 +109,6 @@
 }
 
 .r4 .btn:hover {
-  background: #1d4ed8;
+  background: #2d9a2d;
 }
 
