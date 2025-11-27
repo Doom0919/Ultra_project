@@ -226,3 +226,9 @@
   height: 30px;
   object-fit: contain;
  }
+
+ .shagai-throw{
+  position: absolute;
+  top : 350px;
+  left : 100px;
+ }

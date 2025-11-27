@@ -1,6 +1,7 @@
 import React from "react";
 import Horse from '../components/Horse';
-
+import ShagaiThrow from '../components/shagaithrow.jsx';
+import '../styles/HomeScreen.css';
 export default function GameScreen() {
     // Positions for horses arranged in a curved pattern like the image
     const positions = [
@@ -33,7 +34,7 @@ export default function GameScreen() {
       { top: '58.3%', left: '21.8%', transform: 'rotate(75deg)' },
       { top: '56.8%', left: '28.8%', transform: 'rotate(85deg)' },
       { top: '56.3%', left: '36.3%', transform: 'rotate(90deg)' },
-      { top: '54.8%', left: '42.8%', transform: 'rotate(95deg)' },
+      { top: '56.3%', left: '43.8%', transform: 'rotate(95deg)' },
     ];
 
     return (
@@ -53,6 +54,7 @@ export default function GameScreen() {
                 </div>
             ))}
         </div>
+        <div className="shagai-throw">  <ShagaiThrow/> </div>
         </div>
     );
 }
