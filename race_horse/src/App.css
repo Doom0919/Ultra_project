@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+    margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;        /* scroll-г хаана */
+  overscroll-behavior: none; 
 }
 
 .App-logo {

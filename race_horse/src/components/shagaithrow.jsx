@@ -62,7 +62,7 @@ export default function ShagaiThrow() {
           }}
           >
         {result.map((type, index) => (
-            <motion.img
+             <motion.img
             key={index}
             src={ICONS[type]}
             style={{ width: 90 }}
