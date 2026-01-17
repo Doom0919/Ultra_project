@@ -49,6 +49,10 @@ export default function GameScreen() {
     }
   };
 
+  const handleSkillClick = (skillId) => {
+    setSelectedSkill(selectedSkill === skillId ? null : skillId);
+  };
+
   const throwShagai = () => {
     setIsThrowing(true);
 
@@ -81,12 +85,6 @@ export default function GameScreen() {
     }, THROW_ANIMATION_DURATION);
   };
 
-
-  const skills = useMemo(() => [
-    { id: 1, icon: tashuur, name: "Тахшуур" },
-    { id: 2, icon: imeel, name: "Імээл" },
-    { id: 3, icon: shout, name: "Дуудлага" },
-  ], []);
 
   // Memoize static style objects
   const staticStyles = useMemo(() => ({
@@ -260,7 +258,7 @@ export default function GameScreen() {
               {skills.map((skill) => (
                 <div key={skill.id} style={{ position: "relative" }}>
                   <div
-                    onClick={() => handleImageUpload(skill.id)}
+                    onClick={() => handleSkillClick(skill.id)}
                     style={{
                       width: "3rem",
                       height: "3rem",
@@ -309,6 +307,10 @@ export default function GameScreen() {
                     )}
 
                     <div
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleImageUpload(skill.id);
+                      }}
                       style={{
                         position: "absolute",
                         top: "-1rem",
